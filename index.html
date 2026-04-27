@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroShop — магазин электроники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="header-container">
+        <a href="#" class="logo">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="8" fill="#00c6d7"/>
+                <path d="M8 18L14 12L20 18L26 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 24L14 18L20 24L26 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+            </svg>
+            <span>TECH STORE</span>
+        </a>
+
+        <nav class="nav" id="nav-menu">
+            <a href="#home" onclick="closeMenu()">Главная</a>
+            <a href="#products" onclick="closeMenu()">Товары</a>
+            <a href="#services" onclick="closeMenu()">Услуги</a>
+            <a href="#about" onclick="closeMenu()">О нас</a>
+            <a href="#contacts" class="nav-cta" onclick="closeMenu()">Связаться</a>
+        </nav>
+
+        <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="hero-badge">✦ Новинки 2026</span>
+        <h1>Магазин<br><em>электроники</em></h1>
+        <p>Смартфоны, ноутбуки и аксессуары по выгодным ценам. Официальная гарантия на все товары.</p>
+        <div class="hero-actions">
+            <a href="#products" class="btn-primary">Перейти в каталог</a>
+            <a href="#about" class="btn-ghost">О магазине</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><strong>5 000+</strong><span>Товаров</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>12 лет</strong><span>На рынке</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>99%</strong><span>Довольных</span></div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <span>Листай вниз</span>
+        <svg width="16" height="24" viewBox="0 0 16 24"><path d="M8 0v20M1 13l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+</section>
+
+<section id="products">
+    <div class="container">
+        <div class="section-label">Каталог</div>
+        <h2>Популярные товары</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&auto=format&fit=crop" alt="Смартфоны" />
+                    <span class="card-tag">Хит</span>
+                </div>
+                <div class="card-body">
+                    <h3>Смартфоны</h3>
+                    <p>Современные Android и iOS устройства от ведущих брендов.</p>
+                    <a href="#" class="card-link">Смотреть все →</a>
+                </div>
+            </div>
+
+            <div class="card card-featured">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&auto=format&fit=crop" alt="Ноутбуки" />
+                    <span class="card-tag">Популярно</span>
+                </div>
+                <div class="card-body">
+                    <h3>Ноутбуки</h3>
+                    <p>Для работы, учёбы и игр. Любой бюджет и задача.</p>
+                    <a href="#" class="card-link">Смотреть все →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop" alt="Аксессуары" />
+                    <span class="card-tag">Новинки</span>
+                </div>
+                <div class="card-body">
+                    <h3>Аксессуары</h3>
+                    <p>Наушники, зарядки, кабели и умные устройства.</p>
+                    <a href="#" class="card-link">Смотреть все →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="section-label">Что мы делаем</div>
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-icon">🛡️</div>
+                <h4>Гарантия на всё</h4>
+                <p>Официальная гарантия производителя на все товары в магазине.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🔧</div>
+                <h4>Ремонт и диагностика</h4>
+                <p>Профессиональный сервис с быстрыми сроками исполнения.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">⚙️</div>
+                <h4>Настройка устройств</h4>
+                <p>Поможем настроить новое устройство под ваши нужды.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">💬</div>
+                <h4>Консультации</h4>
+                <p>Специалисты помогут выбрать лучшее решение для ваших задач.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="container about-grid">
+        <div class="about-text">
+            <div class="section-label">О нас</div>
+            <h2 class="about-h2">ElectroShop — техника, которой доверяют</h2>
+            <p>ElectroShop — современный магазин электроники, предлагающий надёжную и актуальную технику для работы, учёбы и развлечений. В нашем ассортименте вы найдёте смартфоны, ноутбуки, компьютеры, аксессуары и умные устройства от проверенных мировых брендов.</p>
+            <p>Мы работаем только с официальными поставщиками — вся продукция имеет сертификацию и официальную гарантию. Наша команда следит за новинками, чтобы предлагать лучшие решения по оптимальному соотношению цены и качества.</p>
+            <a href="#contacts" class="btn-primary">Связаться с нами</a>
+        </div>
+        <div class="about-visual">
+            <div class="about-img-wrap">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&auto=format&fit=crop" alt="О магазине" />
+            </div>
+            <div class="about-badge-float">
+                <strong>12</strong>
+                <span>лет опыта</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#00c6d7"/><path d="M8 18L14 12L20 18L26 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 24L14 18L20 24L26 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
+                <span>TECH STORE</span>
+            </a>
+            <p>Ваш надёжный магазин электроники с 2014 года.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Навигация</h4>
+            <a href="#home">Главная</a>
+            <a href="#products">Товары</a>
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+        </div>
+
+        <div class="footer-contacts-col">
+            <h4>Контакты</h4>
+            <p>📍 г. Москва, ул. Примерная, 10</p>
+            <p>📞 +7 (900) 123-45-67</p>
+            <p>✉️ info@electroshop.ru</p>
+            <p>🕘 Ежедневно 10:00 – 20:00</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="copyright">© 2026 ElectroShop. Все права защищены.</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        const toggle = document.getElementById('mobile-menu');
+        nav.classList.toggle('active');
+        toggle.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    }
+
+    function closeMenu() {
+        const nav = document.getElementById('nav-menu');
+        const toggle = document.getElementById('mobile-menu');
+        nav.classList.remove('active');
+        toggle.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+
+    // Scroll shadow on header
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+</script>
+
+</body>
+</html>
