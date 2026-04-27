@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>ElectroShop — магазин электроники</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span>TECH STORE</span>
+        </a>
+        
+        <nav class="nav" id="nav-menu">
+            <a href="#home">Главная</a>
+            <a href="#products">Товары</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts" class="nav-cta">Связаться</a>
+        </nav>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="header-line"></div>
+</header>
+
+<section class="hero">
+    <h1>Магазин электроники</h1>
+    <p>Смартфоны, ноутбуки и аксессуары по выгодным ценам</p>
+    <a href="#products">
+        <button>Перейти в каталог</button>
+    </a>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>О нас</h2>
+        <p>
+            ElectroShop — современный магазин электроники, предлагающий надёжную и актуальную технику для работы, учёбы и развлечений. В нашем ассортименте вы найдёте смартфоны, ноутбуки, компьютеры, аксессуары и умные устройства от проверенных мировых брендов.
+
+Мы работаем только с официальными поставщиками, поэтому вся продукция имеет сертификацию и официальную гарантию производителя. Наша команда следит за последними технологическими новинками, чтобы предлагать клиентам лучшие решения по оптимальному соотношению цены и качества.
+
+ElectroShop — это удобный сервис, профессиональные консультации и индивидуальный подход к каждому покупателю. Мы помогаем подобрать технику под конкретные задачи, будь то работа, обучение, творчество или отдых, и делаем процесс покупки простым, быстрым и приятным.
+        </p>
+        <p>
+            Наши специалисты всегда готовы помочь с выбором и подобрать оптимальное
+            решение под ваши задачи и бюджет.
+        </p>
+    </div>
+</section>
+
+<section id="products">
+    <div class="container">
+        <h2>Популярные товары</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="images/phone.jpg" alt="Смартфоны" />
+                <h3>Смартфоны</h3>
+                <p>Современные Android и iOS устройства.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/laptop.jpg" alt="Ноутбуки" />
+                <h3>Ноутбуки</h3>
+                <p>Для работы, учёбы и игр.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/accessories.jpg" alt="Аксессуары" />
+                <h3>Аксессуары</h3>
+                <p>Наушники, зарядки и кабели.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Продажа электроники с гарантией</li>
+            <li>Ремонт и диагностика техники</li>
+            <li>Помощь в настройке устройств</li>
+            <li>Консультации специалистов</li>
+        </ul>
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="container footer-contacts">
+        <h2>Контакты</h2>
+        <p>📍 г. Москва, ул. Примерная, 10</p>
+        <p>📞 +7 (900) 123-45-67</p>
+        <p>✉️ info@electroshop.ru</p>
+        <p>🕘 Ежедневно с 10:00 до 20:00</p>
+    </div>
+    <p class="copyright">© 2026 ElectroShop. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
