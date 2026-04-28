@@ -373,26 +373,14 @@ section h2::after {
 .card-body p {
     font-size: 14px;
     color: var(--muted);
-    margin-bottom: 16px;
     line-height: 1.55;
 }
-
-.card-link {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    transition: gap 0.2s;
-}
-
-.card-link:hover { text-decoration: underline; }
 
 /* ===== 6. УСЛУГИ ===== */
 .services-section {
     background: var(--dark);
     color: #fff;
 }
-
-.services-section .section-label { /* already styled */ }
 
 .services-section h2 {
     color: #fff;
@@ -443,8 +431,6 @@ section h2::after {
 .about-section {
     background: var(--white);
 }
-
-.about-section .section-label { /* ok */ }
 
 .about-grid {
     display: grid;
@@ -530,8 +516,10 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1.5fr;
     gap: 40px;
-    padding-bottom: 48px;
+    padding: 0 clamp(20px, 5vw, 60px) 48px;
     border-bottom: 1px solid rgba(255,255,255,0.07);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-brand .logo { margin-bottom: 16px; }
@@ -609,10 +597,8 @@ footer {
 @media (max-width: 768px) {
     :root { --header-h: 64px; }
 
-    /* Бургер */
     .menu-toggle { display: flex; }
 
-    /* Мобильная навигация — полноэкранное меню */
     .nav {
         position: fixed;
         inset: 0;
@@ -655,12 +641,10 @@ footer {
         font-size: 18px;
     }
 
-    /* Burger → X */
     .menu-toggle.active .bar:nth-child(1) { transform: translateY(8.75px) rotate(45deg); }
     .menu-toggle.active .bar:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .menu-toggle.active .bar:nth-child(3) { transform: translateY(-8.75px) rotate(-45deg); }
 
-    /* Hero */
     .hero {
         align-items: center;
         text-align: center;
@@ -669,21 +653,11 @@ footer {
     }
 
     .hero-content { max-width: 100%; }
-
     .hero p { max-width: 100%; }
-
-    .hero-actions {
-        justify-content: center;
-    }
-
-    .hero-stats {
-        justify-content: center;
-        gap: 16px;
-    }
-
+    .hero-actions { justify-content: center; }
+    .hero-stats { justify-content: center; gap: 16px; }
     .stat strong { font-size: 22px; }
 
-    /* Cards — single column */
     .cards {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -691,7 +665,6 @@ footer {
 
     .card-img-wrap { height: 200px; }
 
-    /* Services — 1 col */
     .services-grid {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -699,14 +672,12 @@ footer {
 
     .service-item { padding: 24px 20px; }
 
-    /* About */
     .about-grid {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
     .about-text h2.about-h2 { font-size: clamp(22px, 6vw, 32px); }
-
     .about-img-wrap { aspect-ratio: 16/9; }
 
     .about-badge-float {
@@ -716,15 +687,14 @@ footer {
 
     .about-badge-float strong { font-size: 26px; }
 
-    /* Footer */
     .footer-inner {
         grid-template-columns: 1fr;
         gap: 32px;
+        margin-inline: 30px;
     }
 
     .footer-brand { grid-column: auto; }
 
-    /* Section h2 */
     section h2::after { margin-bottom: 36px; }
 }
 
