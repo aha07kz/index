@@ -74,7 +74,6 @@
                 <div class="card-body">
                     <h3>Смартфоны</h3>
                     <p>Современные Android и iOS устройства от ведущих брендов.</p>
-                    <a href="#" class="card-link">Смотреть все →</a>
                 </div>
             </div>
 
@@ -86,7 +85,6 @@
                 <div class="card-body">
                     <h3>Ноутбуки</h3>
                     <p>Для работы, учёбы и игр. Любой бюджет и задача.</p>
-                    <a href="#" class="card-link">Смотреть все →</a>
                 </div>
             </div>
 
@@ -98,7 +96,6 @@
                 <div class="card-body">
                     <h3>Аксессуары</h3>
                     <p>Наушники, зарядки, кабели и умные устройства.</p>
-                    <a href="#" class="card-link">Смотреть все →</a>
                 </div>
             </div>
         </div>
@@ -156,7 +153,7 @@
 </section>
 
 <footer id="contacts">
-    <div class="container footer-inner">
+    <div class="footer-inner">
         <div class="footer-brand">
             <a href="#" class="logo">
                 <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#00c6d7"/><path d="M8 18L14 12L20 18L26 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 24L14 18L20 24L26 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
@@ -203,7 +200,6 @@
         document.body.classList.remove('no-scroll');
     }
 
-    // Scroll shadow on header
     window.addEventListener('scroll', () => {
         const header = document.getElementById('header');
         header.classList.toggle('scrolled', window.scrollY > 20);
