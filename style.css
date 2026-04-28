@@ -705,4 +705,7 @@ footer {
     .btn-primary, .btn-ghost { text-align: center; }
     .hero-stats { gap: 12px; }
     .stat-divider { display: none; }
+    .footer-inner {
+        margin-inline: 30px;
+    }
 }
